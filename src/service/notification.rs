@@ -1,7 +1,7 @@
 use std::thread;
 
 use bambangshop::{compose_error_response, Result};
-use rocket::{http::Status, response::status};
+use rocket::http::Status;
 
 use crate::{model::{notification::Notification, product::Product, subscriber::Subscriber}, repository::subscriber::SubscriberRepository};
 
