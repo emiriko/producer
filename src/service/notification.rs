@@ -32,7 +32,7 @@ impl NotificationService {
 
     pub fn notify(&self, product_type: &str, status: &str, product: Product) {
         let mut payload: Notification = Notification {
-            product_tile: product.clone().title,
+            product_title: product.clone().title,
             product_type: product.clone().product_type,
             product_url: product.clone().get_url(),
             status: String::from(status),

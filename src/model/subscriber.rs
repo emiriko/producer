@@ -19,6 +19,6 @@ impl Subscriber {
             .header("Content-Type", "JSON")
             .body(to_string(&payload).unwrap())
             .send().await.ok();
-        log::warn_!("Sent {} notification of [{}] {}, to: {}", payload.status, payload.product_type, payload.product_tile, self.url);
+        log::warn_!("Sent {} notification of [{}] {}, to: {}", payload.status, payload.product_type, payload.product_title, self.url);
     }
 }
