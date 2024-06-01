@@ -8,7 +8,7 @@ lazy_static! {
     static ref SUBSCRIBERS: DashMap<String, DashMap<String, Subscriber>> = DashMap::new();
 }
 
-pub struct SubscriberRepository {}
+pub struct SubscriberRepository;
 
 impl SubscriberRepository {
     pub fn add(product_type: &str, subscriber: Subscriber) -> Subscriber {
