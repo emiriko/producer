@@ -5,7 +5,7 @@ use rocket::http::Status;
 
 use crate::{model::{notification::Notification, product::Product, subscriber::Subscriber}, repository::subscriber::SubscriberRepository};
 
-pub struct NotificationService {}
+pub struct NotificationService;
 
 impl NotificationService {
     pub fn subscribe(product_type: &str, subscriber: Subscriber) -> Result<Subscriber> {
