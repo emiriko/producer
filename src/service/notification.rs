@@ -1,6 +1,6 @@
 use bambangshop::Result;
 
-use crate::{model::subscriber::{self, Subscriber}, repository::subscriber::SubscriberRepository};
+use crate::{model::subscriber::Subscriber, repository::subscriber::SubscriberRepository};
 
 pub struct NotificationService {}
 
