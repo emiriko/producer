@@ -1,4 +1,4 @@
-# Publisher App
+# Producer App
 
 ## How to Run in Development Environment
 1.  Set up environment variables first by creating `.env` file.
